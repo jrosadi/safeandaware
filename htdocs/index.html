@@ -10,12 +10,31 @@
     <link rel="icon" type="image/x-icon" href="/assets/img/favicon.ico">
     <link href="/assets/dist/css/bootstrap.min.css" rel="stylesheet">
     <style>
+
+        /* Custom default button */
+        .btn-light,
+        .btn-light:hover,
+        .btn-light:focus {
+          color: #333;
+          text-shadow: none; /* Prevent inheritance from `body` */
+        }
+
       body {
         background-image: url('/assets/img/coverimg.jpg');
           background-repeat: no-repeat;
           background-attachment: fixed;
           background-size: cover;
       }
+
+      body {
+  text-shadow: 0 .05rem .1rem rgba(0, 0, 0, .5);
+  box-shadow: inset 0 0 5rem rgba(0, 0, 0, .5);
+}
+
+.cover-container {
+  max-width: 42em;
+}
+
     </style>
     <!-- Custom styles for this template -->
     <link href="/assets/css/common.css" rel="stylesheet">
@@ -27,7 +46,7 @@
             <h3 class="float-md-start mb-0">Safe&amp;Aware</h3>
             <nav class="nav nav-masthead justify-content-center float-md-end">
                 <a id="nav_home" class="nav-link fw-bold py-1 px-0" aria-current="page" href="#">Home</a>
-                <a id="nav_updates" class="nav-link fw-bold py-1 px-0" href="#">Updates</a>
+                <a id="nav_new" class="nav-link fw-bold py-1 px-0" href="/whats-new.html">What's New</a>
                 <a id="nav_about" class="nav-link fw-bold py-1 px-0" href="#">About Us</a>
             </nav>
         </div>
@@ -42,12 +61,11 @@
         </p>
     </main>
     <!--#include virtual="/include/footer.html" -->
-</div>
-<script src="/assets/dist/js/bootstrap.bundle.min.js"></script>
-<script src="https://code.jquery.com/jquery-3.7.0.min.js" integrity="sha256-2Pmvv0kuTBOenSvLm6bvfBSSHrUJ+3A7x6P5Ebd07/g=" crossorigin="anonymous"></script>
-<script src="/assets/js/common.js"></script>
-<script language="JavaScript">
-    set_active_nav("nav_home");
-</script>
+    </div>
+    <!--#include virtual="/include/common-js.html" -->
+
+    <script language="JavaScript">
+        set_active_nav("nav_home");
+    </script>
 </body>
 </html>
