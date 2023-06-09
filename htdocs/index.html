@@ -10,7 +10,6 @@
     <link rel="icon" type="image/x-icon" href="/assets/img/favicon.ico">
     <link href="/assets/dist/css/bootstrap.min.css" rel="stylesheet">
     <style>
-
         /* Custom default button */
         .btn-light,
         .btn-light:hover,
@@ -19,41 +18,26 @@
           text-shadow: none; /* Prevent inheritance from `body` */
         }
 
-      body {
-        background-image: url('/assets/img/coverimg.jpg');
-          background-repeat: no-repeat;
-          background-attachment: fixed;
-          background-size: cover;
-      }
+        body {
+            background-image: url('/assets/img/coverimg.jpg');
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            background-size: cover;
+            text-shadow: 0 .05rem .1rem rgba(0, 0, 0, .5);
+            box-shadow: inset 0 0 5rem rgba(0, 0, 0, .5);
+        }
 
-      body {
-  text-shadow: 0 .05rem .1rem rgba(0, 0, 0, .5);
-  box-shadow: inset 0 0 5rem rgba(0, 0, 0, .5);
-}
-
-#bottom {
-    position: absolute;
-    bottom: 50px;
-}
-
-
-
+        #bottom {
+            position: absolute;
+            bottom: 50px;
+        }
     </style>
     <!-- Custom styles for this template -->
     <link href="/assets/css/common.css" rel="stylesheet">
 </head>
 <body class="d-flex h-100 text-center text-bg-dark">
 <div class="cover-container d-flex w-100 h-100 p-3 mx-auto flex-column">
-    <header class="mb-auto">
-        <div>
-            <h3 class="float-md-start mb-0">Safe&amp;Aware</h3>
-            <nav class="nav nav-masthead justify-content-center float-md-end">
-                <a id="nav_home" class="nav-link fw-bold py-1 px-0" aria-current="page" href="#">Home</a>
-                <a id="nav_new" class="nav-link fw-bold py-1 px-0" href="/whats-new.html">What's New</a>
-                <a id="nav_about" class="nav-link fw-bold py-1 px-0" href="#">About Us</a>
-            </nav>
-        </div>
-    </header>
+    <!--#include virtual="/include/common-inner-nav.html" -->
 
     <main class="px-3">
         <h1>Safe&Aware</h1>
@@ -66,14 +50,25 @@
 
     <!--#include virtual="/include/common-footer.html" -->
 </div>
-<div id="bottom"  class="mx-auto" style="width: 100%;">
-    <p>“This blog is so inspiring and well done! In a world like ours, info like this becomes increasingly needed and wanted!” -Jazzlyn Sheaf</p>
-    <p>“Oh my god! I’m in LOVE with this blog! Hopefully, my kids pay attention and take the advice. Thanks, girls!”  -Rachel Dunbar</p>
+<div id="bottom" class="mx-auto px-1" style="width: 100%;">
+    <p class="mb-0">
+        <small>
+            “This blog is so inspiring and well done! In a world like ours, info like this becomes increasingly
+            needed and wanted!” -Jazzlyn Sheaf
+        </small>
+    </p>
+    <p>
+        <small>
+            “Oh my god! I’m in LOVE with this blog! Hopefully, my kids pay attention and take the advice.
+            Thanks, girls!” -Rachel Dunbar
+        </small>
+    </p>
 </div>
 <!--#include virtual="/include/common-js.html" -->
 
 <script language="JavaScript">
         set_active_nav("nav_home");
+
 </script>
 </body>
 </html>
