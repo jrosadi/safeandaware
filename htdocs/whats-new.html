@@ -81,7 +81,13 @@
       width: 100%;
       height: 100%;
     }
+        #jumbotron {
+          background-image: url("/assets/img/aboutbackground.jpg");
+          background-size: cover;
+          background-repeat: no-repeat;
+          background-position: center 40%;
 
+        }
 
 </style>
 
@@ -95,9 +101,17 @@
 </head>
 <body>
 
+
 <!--#include virtual="/include/common-nav.html" -->
 <!--Change links when done updating blog!-->
-
+<div class="mb-4 p-5" id="jumbotron">
+    <div class="container-fluid py-5">
+        <h1 class="display-5 fw-bold text-center p-5" style="color:white">What's New</h1>
+        <p class="text-center fs-4" style="color:white">
+            Where you can find updates and what's new with Safe&Aware
+        </p>
+    </div>
+</div>
 <svg xmlns="http://www.w3.org/2000/svg" style="display: none;">
     <symbol id="aperture" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
             stroke-width="2" viewBox="0 0 24 24">
