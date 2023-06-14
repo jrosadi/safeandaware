@@ -11,15 +11,63 @@
     <link href="/assets/dist/css/bootstrap.min.css" rel="stylesheet">
     <!-- Custom styles for this template -->
     <link href="/assets/css/common.css" rel="stylesheet">
+
+    <style>
+        #jumbotron {
+          background-image: url("/assets/img/aboutbackground.jpg");
+          background-size: cover;
+          background-repeat: no-repeat;
+          background-position: center 40%;
+
+        }
+
+
+    </style>
 </head>
 <body>
+
+
 <!--#include virtual="/include/common-nav.html" -->
+
+<div class="mb-4 p-5" id="jumbotron">
+    <div class="container-fluid py-5">
+        <h1 class="display-5 fw-bold text-center p-5" style="color:white">Photo Gallery</h1>
+        <p class="text-center fs-4" style="color:white">
+            This is a photo collage of the events that Safe&Aware has held.
+        </p>
+    </div>
+</div>
+
+<div id="community-expo-carousel" class="carousel slide" style="padding: 25px 10px;">
+    <div class="carousel-inner">
+        <div class="carousel-item active">
+            <img src="/assets/img/comexpo1.jpg" class="d-block w-100" alt="Forum Picture">
+        </div>
+        <div class="carousel-item">
+            <img src="/assets/img/comexpo2.jpg" class="d-block w-100" alt="Forum Picture">
+        </div>
+        <div class="carousel-item">
+            <img src="/assets/img/comexpo3.jpg" class="d-block w-100" alt="Forum Picture">
+        </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#community-expo-carousel"
+            data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#community-expo-carousel"
+            data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+    </button>
+</div>
 <!--#include virtual="/include/common-footer.html" -->
 
 <!--#include virtual="/include/common-js.html" -->
 
 <script language="JavaScript">
         set_active_nav("nav_photo");
+
 </script>
 </body>
 </html>
