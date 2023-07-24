@@ -28,6 +28,7 @@
         .carousel-control-next-icon {
           background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%23ffffff' viewBox='0 0 8 8'%3E%3Cpath d='M2.75 0l-1.5 1.5 2.5 2.5-2.5 2.5 1.5 1.5 4-4-4-4z'/%3E%3C/svg%3E") !important;
         }
+
     </style>
 </head>
 <body>
@@ -45,9 +46,9 @@
 </div>
 
 <div>
-    <h2 class="text-center mb-3">Self Defense Seminar Gallery</h2>
+    <h2 class="text-center my-3">Self Defense Seminar Gallery</h2>
 
-    <div id="demo" class="carousel slide" data-bs-ride="carousel">
+    <div id="demo" class="carousel slide" data-bs-interval="false">
         <!-- The slideshow/carousel -->
         <div class="carousel-inner">
             <div class="carousel-item active">
@@ -137,9 +138,9 @@
 </div>
 
 <div>
-    <h2 class="text-center mb-3">Palatine Community Expo Gallery</h2>
+    <h2 class="text-center my-3">Palatine Community Expo Gallery</h2>
 
-    <div id="mycarousel" class="carousel slide" data-bs-ride="carousel">
+    <div id="mycarousel" class="carousel slide" data-bs-interval="false">
         <!-- The slideshow/carousel -->
         <div class="carousel-inner">
             <div class="carousel-item active">
@@ -192,16 +193,113 @@
     </div>
 </div>
 
+<div class="mb-3">
+    <h2 class="text-center my-3">Youth Self Defense Workshop</h2>
+
+    <div id="self-defense-seminar" class="carousel slide" data-bs-interval="false">
+        <!-- The slideshow/carousel -->
+        <div class="carousel-inner">
+
+            <div class="carousel-item active">
+                <div class="row px-3 pb-3">
+                    <div class="col-md-4 offset-md-4">
+                        <img src="/assets/img/groupphoto.jpg" alt="Group Photo" class="d-block"
+                             style="width:100%">
+                    </div>
+                </div>
+                <div class="text-center">
+                    <h3>Group Photo</h3>
+                    <p>A group photo of everyone who attended the workshop</p>
+                </div>
+            </div>
+
+            <div class="carousel-item">
+                <div class="row px-3 pb-3">
+                    <div class="col-md-4 offset-md-4">
+                        <img src="/assets/img/nadiaandrhea.jpg" alt="Nadia and Rhea" class="d-block"
+                             style="width:100%">
+                    </div>
+                </div>
+                <div class="text-center">
+                    <h3>Nadia and Rhea</h3>
+                    <p>Nadia and Rhea before the workshop</p>
+                </div>
+            </div>
+
+            <div class="carousel-item">
+                <div class="row px-3 pb-3">
+                    <div class="col-md-4">
+                        <img src="/assets/img/selfdefensediscussion.jpg" alt="Self Defense Discussion" class="d-block"
+                             style="width:100%">
+                    </div>
+                    <div class="col-md-4">
+                        <img src="/assets/img/selfdefensediscussion2.jpg" alt="Self Defense Discussion" class="d-block"
+                             style="width:100%">
+                    </div>
+                    <div class="col-md-4">
+                        <img src="/assets/img/selfdefensediscussion3.jpg" alt="Self Defense Discussion" class="d-block"
+                             style="width:100%">
+                    </div>
+                </div>
+                <div class="text-center">
+                    <h3>Self Defense Discussion</h3>
+                    <p>Discussing Various Topics about Self Defense</p>
+                </div>
+            </div>
+
+            <div class="carousel-item">
+                <div class="row px-3 pb-3">
+                    <div class="col-md-4 offset-md-2">
+                        <img src="/assets/img/warmingup.jpg" alt="Self Defense Discussion" class="d-block"
+                             style="width:100%">
+                    </div>
+                    <div class="col-md-4">
+                        <img src="/assets/img/warmingup2.jpg" alt="Self Defense Discussion" class="d-block"
+                             style="width:100%">
+                    </div>
+                </div>
+                <div class="text-center">
+                    <h3>Warming Up</h3>
+                    <p>Warming up to prepare for to practice the self defense techniques</p>
+                </div>
+            </div>
+
+            <div class="carousel-item">
+                <div class="row px-3 pb-3">
+                    <div class="col-md-4">
+                        <img src="/assets/img/practicing.jpg" alt="Practicing" class="d-block"
+                             style="width:100%">
+                    </div>
+                    <div class="col-md-4">
+                        <img src="/assets/img/practicing2.jpg" alt="Practicing" class="d-block"
+                             style="width:100%">
+                    </div>
+                    <div class="col-md-4">
+                        <img src="/assets/img/practicing3.jpg" alt="Practicing" class="d-block"
+                             style="width:100%">
+                    </div>
+                </div>
+                <div class="text-center">
+                    <h3>Practicing New Techniques</h3>
+                    <p>Practicing The Techniques Shown By Rhea and Nadia</p>
+                </div>
+            </div>
+
+            <button class="carousel-control-prev" type="button" data-bs-target="#self-defense-seminar" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon"></span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#self-defense-seminar" data-bs-slide="next">
+                <span class="carousel-control-next-icon"></span>
+            </button>
+        </div>
+    </div>
+</div>
     <!--#include virtual="/include/common-footer.html" -->
 
     <!--#include virtual="/include/common-js.html" -->
 
     <script language="JavaScript">
         set_active_nav("nav_photo");
-
-
-
-
     </script>
 </body>
 </html>
