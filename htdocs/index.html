@@ -27,14 +27,15 @@
             box-shadow: inset 0 0 5rem rgba(0, 0, 0, .5);
         }
 
-        #bottom {
+        .bottom {
             position: absolute;
             bottom: 50px;
         }
-        #bottom-left{
-                    position: absolute;
+        .bottom-left{
+            position: absolute;
             bottom: 0px;
         }
+
     </style>
     <!-- Custom styles for this template -->
     <link href="/assets/css/common.css" rel="stylesheet">
@@ -46,34 +47,23 @@
     <main class="px-3">
         <h1>Safe&Aware</h1>
         <p class="lead">
-            <span class="fs-3">
+            <span class="fs-4">
                 "Feeling safe, respected, and valued"
             </span>
             <br>
-                <small>
-                                   Breaking the cycle of domestic abuse to recognize that everyone
+            <small>
+                Breaking the cycle of domestic abuse to recognize that everyone
                 has the right to feel empowered and hopeful about the future.
-                </small>
+            </small>
         </p>
 
         <p class="lead pb-3">
             <a href="/about.html" class="btn btn-lg btn-light fw-bold border-white bg-white">Learn more</a>
         </p>
     </main>
-
-<!--    <div class="mb-3 " align="center" >-->
-<!--        <div class="card text-dark bg-light mb-3 h-100">-->
-<!--            <div class="card-header fs-3">2/3 Self-Defense Seminar</div>-->
-<!--            <div class="card-body">-->
-<!--                <p class="mb-0">Learn practical and effective self-defense techniques at Safe&Aware's seminar,-->
-<!--                    with Grand Masters Jan and John Wood at <a href="https://www.palatinemartialarts.com/">JP Wood Martial Arts</a>!-->
-<!--                    More details and RSVP <a href="https://forms.gle/wS5NqBngdHAqoGAp7">here</a>.</p>-->
-<!--            </div>-->
-<!--        </div>-->
-<!--    </div>-->
     <!--#include virtual="/include/common-footer.html" -->
 </div>
-<div id="bottom" class="mx-auto px-1" style="width: 100%;">
+<div class="bottom mx-auto px-1" style="width: 100%;">
     <p class="mb-0">
         <small>
             “This blog is so inspiring and well done! In a world like ours, info like this becomes increasingly
@@ -88,13 +78,14 @@
     </p>
 </div>
 
-<div id="bottom-left">
+<div class="bottom-left">
     <p class="float-start ps-3"><small>501(c)(3) Organization</small></p>
 </div>
 <!--#include virtual="/include/common-js.html" -->
 
 <script language="JavaScript">
         set_active_nav("nav_home");
+
 </script>
 </body>
 </html>
