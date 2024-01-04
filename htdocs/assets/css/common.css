@@ -54,4 +54,9 @@
   max-width: 42em;
 }
 
-
+.jumbotron {
+  background-image: url("../img/aboutbackground.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center 40%;
+}
